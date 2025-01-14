@@ -18,8 +18,8 @@ This is a Win32 application and will not work outside of Windows. However, it is
 
 The port and target args can take multiple values so scans may be built like this:
 
-``code
-$ ./Netmap.exe -t localhost 192.168.0.0/24 -p 22 80
+``
+./Netmap.exe -t localhost 192.168.0.0/24 -p 22 80
 ``
 
 ## Credit & License
