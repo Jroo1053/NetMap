@@ -7,7 +7,7 @@ This is more of a project for working on my C++ skills / general programming ski
 These restrictions complicate the codebase quite a bit, as many features like CLI parsing have to be implemented in the software itself, rather than being imported from elsewhere. This is more beneficial as a learning exercise and does have the small benefit of removing any external requirements beyond Windows. 
 
 ## Usage
-This is a Win32 application and will not work outside of Windows. However, it is packaged as a standalone .exe for simplicity. The following arguments are supported, all args can take multiple values:
+This is a Win32 application and will not work outside of Windows. However, it is packaged as a standalone .exe for simplicity. The following arguments are supported:
 
 1. -t (--target) (REQUIRED) target to scan. Note that this can be a IP address, a CIDR notated address or a hostname.
 2. -p (--port) ports to scan. By default the system scans any registered ports below 3500, this is likely to change at some point.
@@ -15,6 +15,12 @@ This is a Win32 application and will not work outside of Windows. However, it is
 4. -n (--net-threads) number of threads to use during scanning.
 5. -d (--delay) wait for a certain time between each host during scanning. Specified in as milliseconds.
 6. -v (--verbose) toggles verbose output.
+
+The port and target args can take multiple values so scans may be built like this:
+
+``code
+$ ./Netmap.exe -t localhost 192.168.0.0/24 -p 22 80
+``
 
 ## Credit & License
 
