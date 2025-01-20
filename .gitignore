@@ -1,0 +1,42 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+/.vs
+/NetMap/x64/Debug
+/NetMap/x64/Release
+/packages/Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7
+/src/NetMap/Debug
+/x64
+/NetMap.sln
+/NetMap.vcxproj
+/NetMap.vcxproj.filters
+/NetMap.vcxproj.user
